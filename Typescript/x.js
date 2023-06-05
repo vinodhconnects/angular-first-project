@@ -3,6 +3,6 @@ function sample(sno, name) {
     // return "hello"
 }
 //sample()
-sample(12, "Raj");
+sample(12, 12);
 //sample("Raj",13)
 //sample(1,2,3)
