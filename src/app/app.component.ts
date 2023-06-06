@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export  class AppComponent {
-  title = 'first-angular-app';
+  title:string = 'first-angular-app';
+  services:string[] = ["Application Services","Infrastructure Services","Testing Services"]
+  themes:string[] = ["dark" , "light", " blue " ," darkred" ]
 }
 
