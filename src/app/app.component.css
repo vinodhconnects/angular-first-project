@@ -11,6 +11,17 @@
     right: 30px;
 }
 
+#select-box{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+#select-box select {
+    height: 30px;
+    width: 250px;
+    border: 2px solid black;
+}
 #themes li{
     list-style-type: none;
     margin-left: 20px;

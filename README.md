@@ -102,3 +102,26 @@
     click is the output directive
 
  ```
+
+
+#### input output directives
+
+This directive is bidirectional
+
+it listens to the changes and at the same time receives value
+from the right side
+
+usually this directives are used in form elements
+
+and the only known popular input output directive is ngModel
+
+it must be enclosed with [()]
+
+```
+   <input type="text" [(ngModel)]="fname">
+
+   in the above case if fname ="John", the text box will be filled with John
+
+   and suppose if you type "peter" in the text box the value fname will be changed
+   to peter
+   ```
