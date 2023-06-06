@@ -2,7 +2,7 @@
     <h1> {{  title }}</h1>
     <div id="themes">
         <ul>
-            <li *ngFor="let n of themes"> {{n}} </li>
+            <li *ngFor="let n of themes; let y=index" (click)="changeTheme(y)"> {{n}} </li>
         </ul>
     </div>
 </div>
