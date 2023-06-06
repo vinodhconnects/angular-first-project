@@ -20,13 +20,13 @@ export  class AppComponent {
   currentTheme:ThemeProps = this.themeStyles[0]
 
   headerClasses:headerThemes [] = [
-     {className:"h1-theme-1", displayName: "Vintage Look"},
-     {className:"h1-theme-2", displayName: "Cursive Font Look"},
-     {className:"h1-theme-3", displayName: "Normal Look"},
+     {className:"h1-theme1", displayName: "Vintage Look"},
+     {className:"h1-theme2", displayName: "Cursive Font Look"},
+     {className:"h1-theme3", displayName: "Normal Look"},
   ]
 
   currentHeaderClass:headerThemes = this.headerClasses[2]
-  
+
   changeTheme(index:number):void {
      this.currentTheme = this.themeStyles[index]
   }

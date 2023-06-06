@@ -1,5 +1,5 @@
 <div id="header" [ngStyle]="currentTheme" >
-    <h1> {{  title }}</h1>
+    <h1 [ngClass]="currentHeaderClass.className"> {{  title }}</h1>
     <div id="themes">
         <ul>
             <li *ngFor="let n of themes; let y=index" (click)="changeTheme(y)"> {{n}} </li>
