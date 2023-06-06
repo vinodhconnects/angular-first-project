@@ -18,5 +18,9 @@ export  class AppComponent {
      {backgroundColor:"#CB4335", color: "#F7F9F9"}
   ]
   currentTheme:ThemeProps = this.themeStyles[0]
+
+  changeTheme(index:number):void {
+     this.currentTheme = this.themeStyles[index]
+  }
 }
 
