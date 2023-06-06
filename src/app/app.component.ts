@@ -25,7 +25,7 @@ export  class AppComponent {
      {className:"h1-theme3", displayName: "Normal Look"},
   ]
 
-  currentHeaderClass:headerThemes = this.headerClasses[2]
+  currentHeaderClass:string = this.headerClasses[2].className
 
   changeTheme(index:number):void {
      this.currentTheme = this.themeStyles[index]
