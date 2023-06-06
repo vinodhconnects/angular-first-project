@@ -37,3 +37,22 @@ h1{
 #content-area {
     overflow: hidden;
 }
+
+.h1-theme1 {
+   font-family: 'Courier New', Courier, monospace;
+   border: 2px dashed rgb(61, 41, 41);
+   width: 200px;
+   padding: 10px;
+}
+.h1-theme2 {
+    font-family: Forte;
+    border: 2px solid rgb(236, 229, 229);
+    width: 200px;
+    padding: 10px;
+}
+.h1-theme3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px dotted rgb(123, 197, 123);
+    width: 200px;
+    padding: 10px;
+}
