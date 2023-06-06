@@ -30,3 +30,47 @@
    We can also create our own custom structural directives
 
    Note: while using structural directives we must prefix them with asterisk(*)
+
+   ### Attribute Directives
+
+     Attribute Directives changes the behaviour of target elements
+
+      Behaviour change ? -- manipulate css attributes like size,color
+                            manipulate data  
+                            listening and handling events
+
+    Attribute directives are further categorized into three kinds
+
+* input directive
+* output directive
+* input and output directive
+
+#### input Directive
+   
+     input directive is meant to receive a value from the right side of the
+     expression and change the behaviour of target element
+
+     and usually the right side value would be a variable defined in the class
+
+     some inbuilt input directives incude
+
+     ```
+              style, ngStyle,ngClass, RouterLink, formControlName.....
+
+     ```
+
+     We have to enclose the input directives within []
+
+     <h1 [sample]="data"></h1>
+
+     in the above case, h1 is the target element
+     sample is the input directive
+     data is the value, data is a variable that would be present in the component class
+
+     if the same above thing defined in the following way
+
+     <h1 sample="data"></h1> OR
+     <h1 [sample]="'data'"></h1>
+
+     in this case, data would be considered a string , that is is directly
+     taken as value
