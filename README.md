@@ -1,27 +1,32 @@
-# FirstAngularApp
+### Angular Directives
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+    The custom html elements and custom attributes that we create in angular
+    are called angular Directives
 
-## Development server
+    there are three kinds of Directives in Angular
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* Component Directives
+* Structural Directives
+* Attribute Directives
 
-## Code scaffolding
+#### Component Directives
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+  Every component that we create is a custom html element
 
-## Build
+  EVery component that you create is a component directive
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### Structural Directives
 
-## Running unit tests
+   Structural Directives generate html template, hides/unhides the template
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+   Basically Structural directives manipulate the layout[html]
 
-## Running end-to-end tests
+   There are few inbuilt stuructural directies
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```
+      Example: ngFor, ngIf, ngSwitch
+   ```
 
-## Further help
+   We can also create our own custom structural directives
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   Note: while using structural directives we must prefix them with asterisk(*)
