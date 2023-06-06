@@ -1,4 +1,4 @@
-<div id="header">
+<div id="header" [ngStyle]="currentTheme">
     <h1> {{  title }}</h1>
     <div id="themes">
         <ul>
@@ -9,7 +9,7 @@
 
 
 <div id="content-area">
-    <app-box *ngFor="let x of services"></app-box>
+    <app-box *ngFor="let x of services" ></app-box>
    <!--  <app-box></app-box>
      <app-box></app-box>
      <app-box></app-box> -->
