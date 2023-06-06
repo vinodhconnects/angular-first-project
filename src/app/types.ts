@@ -3,3 +3,8 @@ export interface ThemeProps {
     color:string;
  }
  
+
+ export interface headerThemes {
+    className:string;
+    displayName:string;
+ }
