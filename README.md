@@ -74,3 +74,31 @@
 
      in this case, data would be considered a string , that is is directly
      taken as value
+
+
+#### Output Directives
+
+   output directives listens to the appropriate Event associated with it on the target element
+
+   ````
+     click, keyup,keydown, change, mouseover,mouseaway.....
+    
+````
+
+  in angular , events on the target elements must be handled by using output
+  directives
+
+  output directives must be enclosed  within ()
+
+  in the right side usually we will give a funciton call and if necassary
+  with a parameter
+
+  example
+
+  ```
+    <button (click)="doThis()"></button>
+
+    in the above case whenever you click button doThis will be called
+    click is the output directive
+
+ ```
