@@ -10,7 +10,7 @@
     </div>
     
     <div id="select-box" >
-        <select [(ngModel)]="currentHeaderClass" (change)="print(currentHeaderClass)">
+        <select [(ngModel)]="currentHeaderClass">
             <option *ngFor="let x of headerClasses" [ngValue]="x">
                 {{x.displayName}}</option>
         </select>
