@@ -8,4 +8,5 @@ import { ThemeProps } from '../types';
 })
 export class BoxComponent {
    @Input() boxtheme:ThemeProps={color:"",backgroundColor:""};
+   @Input("title") boxtitle:string=""
 }
