@@ -26,6 +26,9 @@ export  class AppComponent {
   ]
 
   currentHeaderClass:headerThemes = this.headerClasses[2]
+  
+  hfont: string ="#F1F6F8"
+
 
   changeTheme(index:number):void {
      this.currentTheme = this.themeStyles[index]
