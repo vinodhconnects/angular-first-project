@@ -16,6 +16,9 @@ Development
 
 
 
+
+
+
 Production Environment
 
 
@@ -337,3 +340,40 @@ or child [Sender] to parent   --- @Output
 
 
 in both the cases, the configuration is always is done in child
+
+
+
+ 
+   Angular
+   
+          - Module
+		  
+		  - Component
+		  
+		  - Parent Component Child Component
+		  
+		  - Directive
+		  
+		              Component Directive
+					  
+					  Structural Directive
+					  
+					  Attribute Directive
+					     
+						   Input Directive []
+						   Output Directive ()
+						   Input and Output Direct [()]
+						   
+			Parent child communication
+			
+			   Parent to child
+			     
+				   @Input
+				 
+		    Services
+			
+			    How to create service
+				What is inject
+				How to get service injected into a component
+				
+			What is ngOnInit and its significance
