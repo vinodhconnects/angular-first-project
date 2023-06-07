@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
+import { ThemeProps } from '../types';
 
 @Component({
   selector: 'app-box',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./box.component.css']
 })
 export class BoxComponent {
-
+   @Input() boxtheme:ThemeProps={color:"",backgroundColor:""};
 }

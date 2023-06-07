@@ -326,4 +326,14 @@ Angular CLI
   tsc --target es2022 filename.ts
 
   ----
+  ###
+
   
+
+
+parent to child [Receiver]  -- @Input
+
+or child [Sender] to parent   --- @Output
+
+
+in both the cases, the configuration is always is done in child

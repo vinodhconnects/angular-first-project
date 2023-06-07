@@ -125,3 +125,17 @@ it must be enclosed with [()]
    and suppose if you type "peter" in the text box the value fname will be changed
    to peter
    ```
+
+   ### Parent child communication
+
+   #### Parent to child
+
+   if a parent needs to send data to the child
+
+   the child must have variables ready to receive the
+   value from parent and those variables must be
+   decorated with @Input
+
+   and from that point onwards those variables
+   will behave like input directives but the target
+   element can be only child component
