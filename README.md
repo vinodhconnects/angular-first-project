@@ -139,3 +139,29 @@ it must be enclosed with [()]
    and from that point onwards those variables
    will behave like input directives but the target
    element can be only child component
+
+
+
+### Child to parent
+
+
+## Services
+
+  Service is a class in angular
+
+  It is usually used to hold some reusable logic that
+  can be called and utilized by components , other angular units like pipes, directives
+  and other services
+
+  Service is a class that is decorated with decorator called @Injectable
+
+  The reason we decorate a service with Injectable is  we should
+  not create object for it , instead we must get it injected by angular
+
+  By default an angular service is singleton
+
+  singleton? - no matter how many places you request the object
+  in the code , you will get the same object
+
+  note : if we want a fresh object not a common single object, we
+  can still get it
