@@ -6,11 +6,13 @@
       <!-- <li *ngFor="let x of [0,1,2] (click)="changeTheme(x)>{{themes[x]}}</li>"-->  
         </ul>
     </div>
-    <div id="select-box" [(ngModel)]="currentHeaderClass">
-        <select>
-            <option *ngFor="let x of headerClasses" [value]="x">
+    
+    <div id="select-box" >
+        <select [(ngModel)]="currentHeaderClass" (change)="print(currentHeaderClass)">
+            <option *ngFor="let x of headerClasses" [ngValue]="x">
                 {{x.displayName}}</option>
         </select>
+      
     </div>
 </div>
 
@@ -21,5 +23,4 @@
      <app-box></app-box>
      <app-box></app-box> -->
 </div>
-
 <app-footer ></app-footer>

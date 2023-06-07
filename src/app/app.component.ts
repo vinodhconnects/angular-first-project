@@ -25,10 +25,15 @@ export  class AppComponent {
      {className:"h1-theme3", displayName: "Normal Look"},
   ]
 
-  currentHeaderClass:string = this.headerClasses[2].className
+  currentHeaderClass:headerThemes = this.headerClasses[2]
 
   changeTheme(index:number):void {
      this.currentTheme = this.themeStyles[index]
+  }
+
+  print(x:any){
+   console.log(x)
+   console.log(this.currentHeaderClass)
   }
 }
 

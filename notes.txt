@@ -1,0 +1,329 @@
+
+Static website
+
+Client side applocation -  DEVELOPMENT AND DEPLOYMENT
+
+Environments
+
+
+Development 
+
+
+
+
+
+
+
+
+
+Production Environment
+
+
+------------------
+Conventional Way of Development
+
+Development
+
+            Scripting Language: Javascript - es5/es2015 or above[ whatever 
+			                majority of browser supports]
+			HTML and CSS
+            To run and Test the application - Webserver - apache/nginx/iis
+			
+			Common format?
+			
+			                htmls (index.html(20KB), x.html.y.html) -- 200KB
+							js( index.js, x.js,y.js)  - 3 MB
+							css (styles.css, style2.css) - 2 MB
+							library js( jquery.js ,lib.js) - 6 MB
+							library css(bootstrap.css, jquery-ui.css) -4MB
+				index.html - (index.js, x.js,y.js all css files ,all js files,lib js files
+				lib css files)
+				
+			before we deploy we minify the code
+			
+			    htmls - 200kb
+				js - 2 MB
+				css - 1.5 MB
+				library - 4 MB
+				css lib  - 2 MB
+			
+			minification - removing spaces, remove comments, remove tabs
+			, remove new lines)
+
+Production 
+
+           Scripting Language - Same script used in Development
+		   HTML and CSS - same as development [no change]
+		   to run the application - Webserver-  apache/nginx/iis
+		   
+		   
+-------------------
+Modern SPA Development
+
+Development
+
+            Scripting Language -  Typescript,  JSX ,TSX , es2023 or es2022
+			
+			HTML and CSS - html 5 and css3 / SCSS,SASS,LESS
+			
+			Webserver -  Node JS based web server
+			
+            Code Structure ?
+                  
+                       HTMLs
+                       CSS files - developer created
+                       TS or Latest version JS files -developer created
+                       Ts/Js libraries - lot of libraries
+                       css libraries - lot of libraries					   
+			           
+					   Code -  Application code + Testing code
+					   
+What transistion takes places before going to production
+           1. Typescript is converted to JS [ compilation]
+		   2. Higher version of js is usually converted to most commonly used version
+		       [transpiling]
+		   3. SASS/ LESS need to be converted to css
+		   4. Unit test/integtration must be run an ensured that the test 
+		   cases passes
+		   5. During development developer should easily check the running application
+		   by running it on node based server
+		   6. To take the code to production , we must take up a process  called
+		      bundling
+			          process:
+					    1. Every application will have a starting point
+						from the starting point, the bundler will
+						walk through all the object creations , function 
+						calls and file references ,compiles each file
+						and gathers all the code together in multiple files
+						in to 
+						one of few files
+						
+						[ 100's of ts files, html and css files] ---> 
+						  
+						     [ 1 to max 5 0r 6 js files]
+							 
+							 
+			     
+					   
+Production
+
+
+           Scripting language - es2020 or lesser
+		   html and css - html5 and css3
+		   webserver - iis/apache/nginx
+		   
+		   
+		   
+					   
+			
+			
+			
+	
+			
+			
+			
+--------------------------
+
+
+
+
+        Testing ?
+		
+		
+		 
+		       Unit  - [ each function/feature which you created
+			   test individually]
+			   Integration
+			      - [service- component] 
+				     [component -directive]
+					 [component - pipe]
+					 [component -component]
+			   
+			 DE VE LOPMET   Environment
+			 
+			 
+	-----------------------------------------------------------------------
+	
+	  webserver - packed product
+	  
+	         by using testing tools
+			 
+			 
+			       e2e/acceptance testing
+
+-----------------
+
+
+  Tools needed for client side development 
+  usually runs on node js platform
+  
+  hence for client side/ SPA development node js
+  is needed 
+  
+  tools - [compilers, transpilers, scss/less compilers, minifiers, test runners
+           ,packaging tools]
+		   
+	All these activities for an angular project is taken care by
+	one single tool called [angular cli]
+
+	--------------
+
+    
+
+  npm install -g @angular/cli
+
+  ----
+
+  Node projects
+
+
+    Libraries
+	        
+	    - libraries must be alway installed in the project scope [local scope]
+		
+		libraries are meant to be installed locally, if a tools is required locally
+		can be installed locally [install only in the project older]
+		
+		from npm > 5
+		
+		    npm install <libraryname>
+			npm install libraryname@version
+		for npm <5
+		
+		    npm install --save <libraryname>
+			
+			
+	Dependencies particulary Local Dependencies can be classified in to two types
+	
+	1. Production dependecy
+	          -- needed for both development and production
+			  
+			  example - angular, bootstrap, jquery
+	  
+	      npm install <libraryname>
+	
+	2. Development dependency
+	
+	             -- needed only during development not needed for production
+				 example - ts compiler, jasmine
+			
+			npm install --save-dev <libraryname>
+			
+	
+	Tools - [compiler, transpiler, test runner.....]
+	
+	  Preferrable tools are installed in global scope
+	  
+	  
+	   to install anything in global scope we
+	   use,
+	   
+	    npm install -g <toolname>
+		
+
+        ------
+
+        
+
+angular cli ?
+
+        1. generate the project structure
+		2. generate the code for angular units
+		
+		           a. component
+				   b. module
+				   c. service
+				   d. pipe
+				   e. directive
+				   f. gaurd
+				   
+	    3. to run angular app
+		4. to build and pack angular app
+		5. to test the angular application
+		
+		the angular cli [ng] does this all activities based
+		on configuration written in angular.json
+
+    ------
+
+    
+
+a component is a UI unit
+
+       component has four parts
+	   
+	     1. HTML [template]
+		 2. CSS [Styling]
+		 3. Data
+		 4. Event hanlding functions
+		 
+		 
+		 
+		 menu-bar
+		 
+		 menu-bar.html
+		 menu-bar.css
+		 
+		 @Component(
+		 
+		      selector: 'menu-bar'
+		      templateUrl: 'menu-bar.html',
+			  styleUrls: [ 'menu-bar.css" ]
+		 )
+		 class Menubar{
+		 
+		       menu =[ "home","about","projects","contact"]
+			   
+			   menuClick() {
+			     //code to handle event
+			   }
+			
+		 
+		 
+		 }
+		 
+		 <menu-bar></menu-bar>
+
+         ---------------
+
+         
+
+
+Angular CLI
+
+    to build your application - 
+	
+	        Compiling ts files
+			joining converted js files, css files and html into few
+			js files
+			
+		upon building your angular app you can get production
+		build of your code
+		
+		command : ng build ( generally we run it if we want to pack the app
+		and send to production)
+		
+	to Test run your app and check the outcome in watch mode
+	
+	ng Serve:
+	   it does all things what ng build does [ unlike ng build
+	   it wont create production files] and it will also run a node js based
+	   dev server to run and test the angular app
+
+    -----
+
+    
+
+
+
+  npm install -g typescript
+  
+  
+  tsc filename.ts 
+     //default target is es5
+	 
+	 
+  tsc --target es2022 filename.ts
+
+  ----
+  
