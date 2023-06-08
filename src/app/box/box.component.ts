@@ -10,7 +10,7 @@ import { DataService } from '../services/data.service';
 export class BoxComponent implements OnInit{
    @Input() boxtheme:ThemeProps={color:"",backgroundColor:""}
    @Input("title") boxtitle:string=""
-   features:string[]=[]
+   features:any=[]
    constructor(private ds:DataService){
        // ds.getFeatures(this.boxtitle);
         // According to component life cycle input
@@ -24,6 +24,8 @@ export class BoxComponent implements OnInit{
   // that can be put in a function called ngOnInit which is part of the interface 
   // called OnInit
 
-
+   type(x:any):string{
+       return typeof(x)
+   }
 
 }

@@ -1,6 +1,7 @@
 export const serviceData:any= {
    "Application Services":[
-      "Latest Technologies", "Micro Service Oriented Architecture",
+      {title: "Latest Technologies" ,
+       techs: ["Java","Dotnet","Android","IOS"]}, "Micro Service Oriented Architecture",
       "Containerized Apps" , "Mobile and Web Apps", "Responsive Apps"
    ],
    "Infrastructure Services":[

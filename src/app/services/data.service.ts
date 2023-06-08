@@ -8,7 +8,7 @@ export class DataService {
 
   constructor() { }
 
-  getFeatures(serviceType:string):string[] {
+  getFeatures(serviceType:string):any {
     return serviceData[serviceType];
   }
 }
