@@ -31,7 +31,8 @@ export class BoxComponent implements OnInit{
    }
 
    onFeatureSelect(feature:any):void {
-      this.sendData.emit(feature + " from service "+this.boxtitle)
+      this.sendData.emit(typeof(feature)=="string"?feature:JSON.stringify(feature) 
+       + " from service "+this.boxtitle)
    }
 
 }
