@@ -8,6 +8,8 @@
       <!-- <li *ngFor="let x of [0,1,2] (click)="changeTheme(x)>{{themes[x]}}</li>"-->  
         </ul>
     </div>
+
+    
     
     <div id="select-box" >
         <select [(ngModel)]="currentHeaderClass">
@@ -18,6 +20,9 @@
     </div>
 </div>
 
+<div id="message-area" [ngStyle]="currentTheme" [style.padding]="'30px'">
+    <h3 [style.textAlign]="'center'">{{message}}</h3> 
+</div>
 
 <div id="content-area">
     <app-box *ngFor="let x of services" [boxtheme]="currentTheme"
