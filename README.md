@@ -144,6 +144,15 @@ it must be enclosed with [()]
 
 ### Child to parent
 
+   if child has to send some data to parent
+
+   child must have a property of type EventEmitter
+
+   EventEmitter is a inbuilt class in angular core, it listens events
+
+   and the property must be decorated with @output
+
+   @Output()    sendData:EventEmitter<string> = new EventEmitter<string>()
 
 ## Services
 
