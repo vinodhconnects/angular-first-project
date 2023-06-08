@@ -9,7 +9,8 @@ import { ThemeProps, headerThemes } from './types';
 })
 export  class AppComponent {
   title:string = 'first-angular-app';
-  services:string[] = ["Application Services","Infrastructure Services","Testing Services"]
+  services:string[] = ["Application Services","Infrastructure Services","Testing Services",
+"Database Services"]
   themes:string[] = ["dark" , "light", " blue " ," darkred" ]
   themeStyles:ThemeProps[]= [
      {backgroundColor:"#2E4053",color: "whitesmoke"},

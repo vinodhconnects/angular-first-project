@@ -8,5 +8,6 @@ export const serviceData:any= {
      "Premium Hardware"
    ],
    "Testing Services":[ "Systematic Approach","High Quality Monitoring","Performance Testing"
-    ,"Comprehensive toolset"]
+    ,"Comprehensive toolset"],
+    "Database Services" : ["NOSQL Services", "RDBMS Services"]
 }
